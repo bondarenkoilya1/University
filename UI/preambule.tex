@@ -1,0 +1,41 @@
+% --- Шрифты и языки ---
+\usepackage{fontspec} % поддержка любых шрифтов
+\setmainfont{Times New Roman} % основной шрифт
+\setmonofont{Courier New} % моноширинный шрифт с кириллицей
+\newfontfamily\cyrillicfonttt{Courier New}
+\usepackage{polyglossia}
+\setmainlanguage{russian}
+\setotherlanguage{english}
+
+% --- Основные пакеты ---
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{setspace}
+\usepackage{indentfirst}
+\usepackage{titlesec}
+\usepackage[left=30mm, right=15mm, top=20mm, bottom=20mm]{geometry}
+
+% --- Основной текст ---
+\setlength{\parindent}{1.25cm} % абзацный отступ
+\onehalfspacing% межстрочный интервал
+
+% --- Подписи к рисункам ---
+\captionsetup{
+	labelsep=period,
+	justification=centering,
+	font=normalsize
+}
+
+% --- Заголовки разделов (1 уровень) ---
+\titleformat{\section}
+{\bfseries\centering\fontsize{16}{19}\selectfont}
+{\thesection}{1em}{}
+\titlespacing*{\section}{0pt}{2\baselineskip}{1.5\baselineskip}
+
+% --- Заголовки подразделов (2 уровень) ---
+\titleformat{\subsection}
+{\bfseries\fontsize{15}{18}\selectfont}
+{\thesubsection}{1em}{}
+\titlespacing*{\subsection}{0pt}{1.5\baselineskip}{1\baselineskip}
+
+\sloppy

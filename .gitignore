@@ -1,7 +1,11 @@
 desktop.ini
 preambule.tex
-UI
 *.aux
 *.log
 *.gz
 *.toc 
+/UI/*
+!/UI/
+!/UI/main.tex
+!/UI/main.pdf
+!/UI/preambule.tex

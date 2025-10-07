@@ -1,0 +1,7 @@
+desktop.ini
+preambule.tex
+UI
+*.aux
+*.log
+*.gz
+*.toc 
